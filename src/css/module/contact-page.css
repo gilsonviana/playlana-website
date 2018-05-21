@@ -1,0 +1,67 @@
+.contact-page .box {
+    width: 220px;
+    margin: 76px auto 100px;
+}
+
+.contact-page .box form h2 {
+    margin: 0 0 28px;
+}
+
+.contact-page .box form .f-group {
+    text-align: center;
+    margin: 0 0 23px;
+    position: relative;
+}
+
+.contact-page .box form .required-fields {
+    position: absolute;
+    left: 0;
+}
+
+.contact-page .box form .f-group label {
+    margin: 0 0 7px;
+    display: block;    
+    font-family: var(--base-heading, 'Francois One'), sans-serif;    
+}
+
+.contact-page .box form .f-group input {    
+    padding: 16px 0 16px;
+}
+
+.contact-page .box form .f-group input,
+.contact-page .box form .f-group textarea {
+    width: 100%;
+    border: 1px solid #CFD8DA;
+}
+
+.contact-page .box form .f-group button[type="submit"] {
+    margin: 37px 0 0;
+    background: var(--primary-color);
+    color: var(--white-color, #fff);
+    border: none;
+    border-radius: 2px;
+    font-family: var(--base-heading);
+    padding: 10px 40px;
+    text-shadow: var(--box-shadow);
+}
+
+@media (min-width: 768px) {
+    .contact-page .box {
+        margin: 100px auto 82px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contact-page .box {
+        margin: 145px auto 160px;
+    }
+
+    .contact-page .box form h2 {
+        margin: 0 0 28px;
+        font-size: 40px !important;
+    }
+
+    .contact-page .box form .f-group label {
+        font-size: 16px;
+    }
+}

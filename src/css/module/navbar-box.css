@@ -1,0 +1,64 @@
+.navbar-box .navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    text-transform: uppercase;    
+    font-family: var(--base-heading, 'Francois One'), sans-serif;    
+}
+
+.navbar-box .navbar a {
+    color: var(--white-color, #fff);            
+}
+
+.header-front-page .navbar-box .navbar .apple-store-btn {
+    display: none;
+    border: 0;
+    border-radius: 3px;
+    background: var(--primary-color, #13C19A);
+    padding: 11px 18px;   
+    text-shadow: 1px 1px rgba(100, 100, 100, .5);
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .header-front-page .navbar-box .navbar .apple-store-btn {
+        display: block;
+    }
+}
+
+.navbar-box .navbar #navbar-toggle {
+    padding: 0;
+    position: absolute;
+    right: 0;    
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.navbar-box .navbar #navbar-toggle span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: var(--white-color, #fff);
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .navbar-box .navbar a:first-child {
+        border: 0;
+        border-radius: 3px;
+        background: var(--primary-color, #13C19A);
+        padding: 11px 18px;   
+        text-shadow: 1px 1px rgba(100, 100, 100, .5);
+    }
+
+    .navbar-box .navbar a {
+        margin-right: 33px;
+        font-size: 16px;        
+        border-bottom: 5px solid var(--primary-color, #13C19A);
+    }
+
+    .navbar-box .navbar a:last-child {
+        margin: 0;
+    }
+}

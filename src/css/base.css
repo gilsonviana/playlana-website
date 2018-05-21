@@ -1,0 +1,144 @@
+html {
+    font-size: var(--font-size, 14px);
+}
+
+body {
+    margin: 0;
+    font-family: var(--base-font, sans-serif);
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a,
+a:link,
+a:focus,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--base-heading, sans-serif);
+    font-weight: normal;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-heading {
+    font-family: var(--base-heading, 'Francois One'), sans-serif;
+}
+
+.color-primary {
+    color: var(--primary-color, #13C19A);
+}
+
+.color-secondary {
+    color: var(--secondary-color, #3EB8CE);
+}
+
+.color-white {
+    color: var(--white-color, #fff);
+}
+
+.bg-default {
+    background-color: var(--bkg-color, #E2E9EA);
+}
+
+.bg-ternary {
+    background-color: var(--ternary-color, #496D72);
+}
+
+.bg-dark {
+    background-color: var(--bk-dark-color, #334247);
+}
+
+.bg-white {
+    background-color: var(--white-color, #fff);
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
+    .d-s1-none {
+        display: none;
+    }
+
+    .d-s1-block {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .d-s2-none {
+        display: none !important;
+    }
+
+    .d-s2-block {
+        display: block;
+    }
+}
+
+@media (min-width: 1440px) {
+    .d-s3-none {
+        display: none;
+    }
+
+    .d-s3-block {
+        display: block;
+    }
+}

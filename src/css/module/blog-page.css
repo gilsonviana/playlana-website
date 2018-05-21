@@ -1,0 +1,131 @@
+.blog-page {
+    padding: 59px 0 0;
+}
+
+.blog-post {
+    overflow: hidden;
+    width: 280px;
+    margin: 0 auto;
+}
+
+.blog-post .blog-post__thumbnail {
+    width: 280px;
+    height: 158px;
+}
+
+.blog-post .blog-post__title {    
+    margin: 20px 0 3px;
+    font-family: var(--base-font, 'Roboto'), sans-serif;
+    padding: 0 5px;  
+    font-weight: bold;  
+}
+
+.blog-post .blog-post__date {
+    color: #A4B0B4;
+    font-family: var(--base-font, 'Roboto'), sans-serif;
+    margin: 0 0 10px;
+    font-weight: normal;
+}
+
+.blog-post .blog-post__body p {
+    line-height: 1.4;
+}
+
+.blog-post .blog-post__more {
+    display: inline-block;
+    margin: 15px 0 0;
+    border-bottom: 5px solid var(--primary-color, #13C19A);
+    color: var(--black-color, #334348);
+    font-weight: bold;
+}
+
+.blog-post .blog-post__breaker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 29px 0;
+}
+
+.blog-post .blog-post__breaker img {
+    margin: 0 5px; 
+}
+
+.blog-post .blog-post__breaker:before {
+    content: "";    
+    width: 50%;
+    height: 2px;
+    background: #d5dcde;    
+}
+
+.blog-post .blog-post__breaker:after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #d5dcde;    
+}
+
+.blog-page .blog-page__newsletter {
+    margin-top: 37px;
+    margin-left: 81px;
+    font-weight: normal;
+}
+
+.blog-page .blog-page__newsletter h2 {
+    font-weight: normal;
+}
+
+.blog-page .blog-page__newsletter p {
+    font-size: 16px;
+    margin: 0 0 26px;
+}
+
+.blog-page .blog-page__newsletter p span {
+    display: block;
+}
+
+.blog-page .blog-page__newsletter form {
+    display: flex;
+}
+
+.blog-page .blog-page__newsletter form input[type="email"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-right: 11px;
+}
+
+.blog-page .blog-page__newsletter form button {
+    background: var(--secondary-color, #3EB8CE);
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .blog-post {        
+        width: 100%;        
+        text-align: left;
+    }
+
+    .blog-post .blog-post__thumbnail {
+        width: 608px;
+        height: 344px;
+    }
+
+    .blog-post .blog-post__title {    
+        margin: 20px 0 3px;        
+        padding: 0;            
+    }
+}
+
+@media (min-width: 1440px) {
+    .blog-post .blog-post__thumbnail {
+        width: 852px;
+        height: 481px;
+    }
+
+    .blog-post .blog-post__title {            
+        font-size: 36px;
+    }
+}

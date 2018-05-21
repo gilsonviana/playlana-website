@@ -1,0 +1,37 @@
+.header-contact .navbar-box .navbar a {
+    color: var(--black-color);
+}
+
+.header-contact .navbar #navbar-toggle span {
+    background: var(--black-color) !important;
+}
+
+.header-contact .navbar-box .navbar .navbar--collapse a:first-child {
+    color: var(--white-color);
+}
+
+.header-contact .apple-store-btn {
+    border: 1px solid var(--black-color);
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin-left: -20px;
+}
+
+.header-contact .apple-store-btn img {
+    display: none;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .header-contact .apple-store-btn {
+        border: 0;
+        border-radius: 3px;
+        background: var(--primary-color, #13C19A);
+        padding: 11px 18px;   
+        text-shadow: 1px 1px rgba(100, 100, 100, .5);
+        color: var(--white-color) !important;
+    }
+
+    .header-contact .apple-store-btn img {
+        display: inline-block;
+    }
+}

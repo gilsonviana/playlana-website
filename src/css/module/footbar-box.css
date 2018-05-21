@@ -1,0 +1,41 @@
+.footbar-box {
+    background-color: var(--white-color, #fff);
+}
+
+.footbar-box .row:first-child [class|=col] {
+    background: url('img/footer-shapes.png') center no-repeat;
+    background-size: cover;
+}
+
+.footbar-box .footer-menu {
+    position: relative;
+    margin: 54px 0;
+    font-size: 16px;
+}
+
+.footbar-box .footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footbar-box .footer-menu ul li {
+    margin: 35px 0;
+}
+
+.footbar-box .footer-menu a {    
+    color: var(--black-color, #334348);
+    border-bottom: 5px solid var(--primary-color, #13C19A);        
+    font-family: var(--base-heading, 'Francois One'), sans-serif;
+}
+
+.footbar-box .copyright {
+    margin: 15px 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footbar-box .copyright {     
+        text-align: left;
+    }
+}

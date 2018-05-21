@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #13C19A;
+    --secondary-color: #3EB8CE;
+    --ternary-color: #496D72;
+    --fourth-color: #3C5A5E;
+    --white-color: #fff;
+    --black-color: #334348;
+    --bkg-color: #E2E9EA;
+    --bk-dark-color: #334247;    
+    --bg-darker: #191D1F;
+
+    --font-size: 14px;    
+    --base-font: 'Roboto', sans-serif;
+    --base-heading: 'Francois One', sans-serif;
+
+    --box-shadow: .1rem .1rem 1rem rgba(100, 100, 100, .5);
+}
