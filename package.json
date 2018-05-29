@@ -12,5 +12,8 @@
     "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

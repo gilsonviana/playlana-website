@@ -3,8 +3,12 @@
     margin: 76px auto 100px;
 }
 
+.contact-page .box form {
+    position: relative;
+}
+
 .contact-page .box form h2 {
-    margin: 0 0 28px;
+    margin: 0 0 50px;
 }
 
 .contact-page .box form .f-group {
@@ -18,18 +22,19 @@
     left: 0;
 }
 
+.contact-page .box form .field-error {
+    border: 1px solid #FF8686 !important;
+}
+
 .contact-page .box form .f-group label {
     margin: 0 0 7px;
     display: block;    
     font-family: var(--base-heading, 'Francois One'), sans-serif;    
 }
 
-.contact-page .box form .f-group input {    
-    padding: 16px 0 16px;
-}
-
 .contact-page .box form .f-group input,
 .contact-page .box form .f-group textarea {
+    padding: 16px 16px 13px;
     width: 100%;
     border: 1px solid #CFD8DA;
 }
@@ -43,6 +48,30 @@
     font-family: var(--base-heading);
     padding: 10px 40px;
     text-shadow: var(--box-shadow);
+}
+
+.contact-page .box .contact-page-message {
+    position: absolute;    
+    left: 0;
+    top: 32px;
+    width: 100%;
+    font-family: var(--base-heading, 'Francois One'), sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-page .box .contact-page-message--success {
+    background: #14C19A;  
+    padding: 8px 0;  
+}
+
+.contact-page .box .contact-page-message--error {
+    background: #3C5B5F;
+    padding: 8px 0;      
+}
+
+.contact-page .box .contact-page-message--error span {
+    color: #FF8686;
 }
 
 @media (min-width: 768px) {
@@ -62,6 +91,6 @@
     }
 
     .contact-page .box form .f-group label {
-        font-size: 16px;
+        font-size: 20px;
     }
 }

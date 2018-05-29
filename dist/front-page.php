@@ -24,7 +24,7 @@
                     </div>
                 </div>                
                 <div class="col-s1-three col-s2-half">
-                    <img class="mobile-placeholder" src="<?php echo get_template_directory_uri() . '/img/mobile-placeholder.png'; ?>" alt="mobile placeholder" width="309" height="635"/>
+                    <!-- <img class="mobile-placeholder" src="<?php echo get_template_directory_uri() . '/img/mobile-placeholder.png'; ?>" alt="mobile placeholder" width="309" height="635"/> -->
                 </div>
             </div>
         </div>        

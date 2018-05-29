@@ -296,7 +296,7 @@ Author: Gilson Viana
   }
 body.home {
     background: url('img/header-bkg.png') no-repeat; 
-    background-size: 300% 503px;
+    background-size: 400% 503px;
 }
 
 body.blog,
@@ -483,8 +483,12 @@ body.page-id-9 main header {
     margin: 76px auto 100px;
 }
 
+.contact-page .box form {
+    position: relative;
+}
+
 .contact-page .box form h2 {
-    margin: 0 0 28px;
+    margin: 0 0 50px;
 }
 
 .contact-page .box form .f-group {
@@ -498,18 +502,19 @@ body.page-id-9 main header {
     left: 0;
 }
 
+.contact-page .box form .field-error {
+    border: 1px solid #FF8686 !important;
+}
+
 .contact-page .box form .f-group label {
     margin: 0 0 7px;
     display: block;    
     font-family: var(--base-heading, 'Francois One'), sans-serif;    
 }
 
-.contact-page .box form .f-group input {    
-    padding: 16px 0 16px;
-}
-
 .contact-page .box form .f-group input,
 .contact-page .box form .f-group textarea {
+    padding: 16px 16px 13px;
     width: 100%;
     border: 1px solid #CFD8DA;
 }
@@ -523,6 +528,30 @@ body.page-id-9 main header {
     font-family: var(--base-heading);
     padding: 10px 40px;
     text-shadow: var(--box-shadow);
+}
+
+.contact-page .box .contact-page-message {
+    position: absolute;    
+    left: 0;
+    top: 32px;
+    width: 100%;
+    font-family: var(--base-heading, 'Francois One'), sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-page .box .contact-page-message--success {
+    background: #14C19A;  
+    padding: 8px 0;  
+}
+
+.contact-page .box .contact-page-message--error {
+    background: #3C5B5F;
+    padding: 8px 0;      
+}
+
+.contact-page .box .contact-page-message--error span {
+    color: #FF8686;
 }
 
 @media (min-width: 768px) {
@@ -542,7 +571,7 @@ body.page-id-9 main header {
     }
 
     .contact-page .box form .f-group label {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 .fixed-bar {
@@ -662,26 +691,35 @@ body.page-id-9 main header {
     padding: 20px 0;
 }
 
-.header-blog .header-newsletter form input[type="email"] {
+.header-blog .header-newsletter form input[type="text"] {
     width: 160px;
     background: #fff;
     border: none;
     padding: 0 10px;
+    outline: none;
 }
 
-.header-blog .header-newsletter form input[type="email"]::-webkit-input-placeholder {
+.header-blog .header-newsletter form input[type="text"]:focus {
+    border: 1px solid #3EB8CE;
+}
+
+.header-blog .header-newsletter .field-error {
+    border: 1px solid #FF8686 !important;
+}
+
+.header-blog .header-newsletter form input[type="text"]::-webkit-input-placeholder {
     font-style: italic;
 }
 
-.header-blog .header-newsletter form input[type="email"]::-moz-placeholder {
+.header-blog .header-newsletter form input[type="text"]::-moz-placeholder {
     font-style: italic;
 }
 
-.header-blog .header-newsletter form input[type="email"]:-ms-input-placeholder {
+.header-blog .header-newsletter form input[type="text"]:-ms-input-placeholder {
     font-style: italic;
 }
 
-.header-blog .header-newsletter form input[type="email"]:-moz-placeholder {
+.header-blog .header-newsletter form input[type="text"]:-moz-placeholder {
     font-style: italic;
 }
 
@@ -773,8 +811,7 @@ body.page-id-9 main header {
 }
 
 .front-page .lead:nth-child(1) {
-    margin: 93px 0 137px;
-    overflow-x: hidden;
+    margin: 93px 0 137px;    
 }
 
 .front-page .lead:nth-child(1) .box h1 {    
@@ -1129,21 +1166,42 @@ body.page-id-9 main header {
     }
 }
 
-.navbar-box .navbar #navbar-toggle {
+.navbar-box .navbar #navbar-toggle,
+.navbar-box .navbar #fixed-navbar-toggle {
     padding: 0;
     position: absolute;
     right: 0;    
     border: none;
     outline: none;
     background: transparent;
+    width: 40px;
+    height: 40px;
 }
 
-.navbar-box .navbar #navbar-toggle span {
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: var(--white-color, #fff);
-    margin: 10px 0;
+.navbar-box .navbar--collapsed {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #14C19A;
+    box-shadow: 1px 1px 16px #666;
+    width: 160px;
+    text-align: center;
+}
+
+.navbar-box .navbar--collapsed ul {
+    list-style: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
+    padding: 55px 0;        
+}
+
+.navbar-box .navbar--collapsed ul li {
+    margin: 0 0 25px;
+}
+
+.navbar-box .navbar--collapsed ul li a {
+    border-bottom: 5px solid #1BF9C7;
 }
 
 @media (min-width: 768px) {

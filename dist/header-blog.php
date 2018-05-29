@@ -9,6 +9,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+    <?php include('newsletter-form-process.php'); ?>
     <main>
         <?php get_template_part( 'fixed-bar' ); ?>
         <header class="header-blog">
@@ -57,8 +58,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-s1-three">
-                            <form id="header-blog-newsletter-form">
-                                <input type="email" placeholder="Your email" name="subscriber-email">
+                            <form id="header-blog-newsletter-form" action="" method="post">
+                                <input type="text" placeholder="Your email" name="subscriber-email">
                                 <button class="font-heading" type="submit">SUBSCRIBE <img src="<?php echo get_template_directory_uri(). '/img/angle-right.png'; ?>" width="6" height="11" /></button>
                             </form>
                         </div>

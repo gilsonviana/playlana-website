@@ -22,8 +22,8 @@ add_action( 'after_setup_theme', 'playlana_setup' );
 
 function playlana_scripts() {
 
-    wp_enqueue_style( 'playlana-fonts', '//fonts.googleapis.com/css?family=Francois+One|Roboto' );        
-    wp_enqueue_style( 'playlana-style', get_stylesheet_uri() );         
+    wp_enqueue_style( 'playlana-fonts', '//fonts.googleapis.com/css?family=Francois+One|Roboto|Barlow+Condensed:700' );        
+    wp_enqueue_style( 'playlana-style', get_stylesheet_uri() );    
     wp_enqueue_script( 'playlana-script', get_template_directory_uri() . '/main.js', array(), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'playlana_scripts' );

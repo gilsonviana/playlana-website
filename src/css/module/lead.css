@@ -7,8 +7,7 @@
 }
 
 .front-page .lead:nth-child(1) {
-    margin: 93px 0 137px;
-    overflow-x: hidden;
+    margin: 93px 0 137px;    
 }
 
 .front-page .lead:nth-child(1) .box h1 {    

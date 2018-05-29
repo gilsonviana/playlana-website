@@ -26,21 +26,42 @@
     }
 }
 
-.navbar-box .navbar #navbar-toggle {
+.navbar-box .navbar #navbar-toggle,
+.navbar-box .navbar #fixed-navbar-toggle {
     padding: 0;
     position: absolute;
     right: 0;    
     border: none;
     outline: none;
     background: transparent;
+    width: 40px;
+    height: 40px;
 }
 
-.navbar-box .navbar #navbar-toggle span {
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: var(--white-color, #fff);
-    margin: 10px 0;
+.navbar-box .navbar--collapsed {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #14C19A;
+    box-shadow: 1px 1px 16px #666;
+    width: 160px;
+    text-align: center;
+}
+
+.navbar-box .navbar--collapsed ul {
+    list-style: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
+    padding: 55px 0;        
+}
+
+.navbar-box .navbar--collapsed ul li {
+    margin: 0 0 25px;
+}
+
+.navbar-box .navbar--collapsed ul li a {
+    border-bottom: 5px solid #1BF9C7;
 }
 
 @media (min-width: 768px) {
