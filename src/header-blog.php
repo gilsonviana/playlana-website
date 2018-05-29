@@ -24,15 +24,22 @@
                         </div>
                         <div class="col-s1-half">
                             <nav class="navbar">                                
-                                <a class="d-s2-none apple-store-btn" href="https://www.apple.com/ios/app-store/"><img src="<?php echo get_template_directory_uri() . '/img/apple.png'; ?>" alt="apple logo" /> app store</a>
+                                <a class="d-s2-none apple-store-btn" href="https://www.apple.com/ios/app-store/"><img src="<?php echo get_template_directory_uri() . '/img/apple.png'; ?>" alt="apple logo" /> app store</a>                                
                                 <button id="navbar-toggle" class="d-s2-none">
-                                    <span></span>
-                                    <span></span>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/hamburger-btn-open.png'; ?>">
                                 </button>
                                 <div class="navbar--collapse d-s1-none">
                                     <a href="https://www.apple.com/ios/app-store/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/apple.png'; ?>" alt="apple logo" /> app store</a>
                                     <a href="<?php echo esc_url( get_page_link( 7 ) ); ?>">blog</a>
                                     <a href="<?php echo esc_url( get_page_link( 9 ) ); ?>">contact</a>
+                                </div>
+                                <div class="navbar--collapsed">
+                                    <ul class="text-uppercase">
+                                        <li><a href="<?php echo esc_url( home_url() ); ?>">home</a></li>
+                                        <li><a href="https://www.apple.com/ios/app-store/" target="_blank">app store</a></li>
+                                        <li><a href="<?php echo esc_url( get_page_link( 7 ) ); ?>">blog</a></li>
+                                        <li><a href="<?php echo esc_url( get_page_link( 9 ) ); ?>">contact</a></li>
+                                    </ul>
                                 </div>
                             </nav>
                         </div>
@@ -59,9 +66,15 @@
                     <div class="row">
                         <div class="col-s1-three">
                             <form id="header-blog-newsletter-form" action="" method="post">
-                                <input type="text" placeholder="Your email" name="subscriber-email">
-                                <button class="font-heading" type="submit">SUBSCRIBE <img src="<?php echo get_template_directory_uri(). '/img/angle-right.png'; ?>" width="6" height="11" /></button>
-                            </form>
+                                <input class="<?php echo ($newsletter_error) ? 'field-error' : ''; ?>" type="text" placeholder="Your email" name="subscriber-email" value="<?php echo $newsletter; ?>">                                
+                                <button class="font-heading <?php echo ($newsletter_error) ? 'submit-btn--error' : ''; ?>" type="submit">SUBSCRIBE <img src="<?php echo get_template_directory_uri(). '/img/angle-right.png'; ?>" width="6" height="11" /></button>                                
+                                <p class="header-blog-newsletter-form-invalid <?php echo ($newsletter_error) ? '--show' : ''; ?>"><span>Invalid</span> email</p>                                
+                                <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$newsletter_error) : ?>
+                                    <div class="header-blog-newsletter-form-success">
+                                        <p>Thank you!</p>
+                                    </div>
+                                <?php endif; ?>
+                            </form>                            
                         </div>
                     </div>
                 </div>

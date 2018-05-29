@@ -43,7 +43,7 @@
                         <span>newsletter each week</span>
                     </p>
                     <form id="blog-page-newsletter-form">
-                        <input type="email" name="subscriber-email" placeholder="Your email"/>
+                        <input type="text" name="subscriber-email" placeholder="Your email"/>
                         <button class="text-uppercase font-heading color-white" type="submit">subscribe <img src="<?php echo get_template_directory_uri(). '/img/angle-right.png'; ?>" width="6" height="11" /></button>
                     </form>
                 </div>

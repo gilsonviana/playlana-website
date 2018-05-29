@@ -47,6 +47,7 @@
     box-shadow: 1px 1px 16px #666;
     width: 160px;
     text-align: center;
+    z-index: 999;
 }
 
 .navbar-box .navbar--collapsed ul {

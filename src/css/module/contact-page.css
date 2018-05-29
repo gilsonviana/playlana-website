@@ -1,45 +1,56 @@
-.contact-page .box {
-    width: 220px;
-    margin: 76px auto 100px;
+.contact-page {    
+    margin: 76px auto 100px;    
 }
 
-.contact-page .box form {
-    position: relative;
+.contact-page form {
+    width: 320px;
+    margin: 0 auto;    
+} 
+
+.contact-page form h2 {
+    margin: 0 0 8px;
 }
 
-.contact-page .box form h2 {
-    margin: 0 0 50px;
-}
-
-.contact-page .box form .f-group {
+.contact-page form .f-group {
     text-align: center;
     margin: 0 0 23px;
     position: relative;
 }
 
-.contact-page .box form .required-fields {
-    position: absolute;
-    left: 0;
+.contact-page form .f-group:nth-child(6) {
+    text-align: left;
+    margin: -16px 0 0;
 }
 
-.contact-page .box form .field-error {
+.contact-page form .required-fields {    
+    margin-left: 50px;
+}
+
+.contact-page form .field-error {
     border: 1px solid #FF8686 !important;
 }
 
-.contact-page .box form .f-group label {
+.contact-page form .f-group label {
     margin: 0 0 7px;
     display: block;    
     font-family: var(--base-heading, 'Francois One'), sans-serif;    
 }
 
-.contact-page .box form .f-group input,
-.contact-page .box form .f-group textarea {
+.contact-page form .f-group input,
+.contact-page form .f-group textarea {
     padding: 16px 16px 13px;
-    width: 100%;
-    border: 1px solid #CFD8DA;
+    width: 220px;
+    border: 1px solid #CFD8DA;    
+    outline: none;
+    font-family: 'Roboto', sans-serif;
 }
 
-.contact-page .box form .f-group button[type="submit"] {
+.contact-page form .f-group input:focus,
+.contact-page form .f-group textarea:focus {
+    border: 1px solid #14C19A !important;
+}
+
+.contact-page form .f-group button[type="submit"] {
     margin: 37px 0 0;
     background: var(--primary-color);
     color: var(--white-color, #fff);
@@ -50,47 +61,50 @@
     text-shadow: var(--box-shadow);
 }
 
-.contact-page .box .contact-page-message {
-    position: absolute;    
-    left: 0;
-    top: 32px;
-    width: 100%;
+.contact-page .contact-page-message {    
     font-family: var(--base-heading, 'Francois One'), sans-serif;
     color: #fff;
     font-size: 20px;
+    white-space: nowrap;
+    margin: 0 0 20px;
 }
 
-.contact-page .box .contact-page-message--success {
+.contact-page .contact-page-message--success {
     background: #14C19A;  
     padding: 8px 0;  
 }
 
-.contact-page .box .contact-page-message--error {
+.contact-page .contact-page-message--error {
     background: #3C5B5F;
     padding: 8px 0;      
 }
 
-.contact-page .box .contact-page-message--error span {
+.contact-page .contact-page-message--error span {
     color: #FF8686;
 }
 
 @media (min-width: 768px) {
-    .contact-page .box {
+    .contact-page {
         margin: 100px auto 82px;
+        position: relative;
+    }
+
+    .contact-page .contact-page-message {
+        top: 0;
     }
 }
 
 @media (min-width: 1440px) {
-    .contact-page .box {
+    .contact-page {
         margin: 145px auto 160px;
     }
 
-    .contact-page .box form h2 {
+    .contact-page form h2 {
         margin: 0 0 28px;
         font-size: 40px !important;
     }
 
-    .contact-page .box form .f-group label {
+    .contact-page form .f-group label {
         font-size: 20px;
     }
 }

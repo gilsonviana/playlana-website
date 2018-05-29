@@ -22,7 +22,8 @@
 }
 
 .header-blog .header-newsletter {
-    background: var(--fourth-color, #3C5A5E);    
+    background: var(--fourth-color, #3C5A5E);  
+    position: relative;  
 }
 
 .header-blog .header-newsletter form {
@@ -47,6 +48,41 @@
 
 .header-blog .header-newsletter .field-error {
     border: 1px solid #FF8686 !important;
+}
+
+.header-blog .header-newsletter .submit-btn--error {
+    display: none;
+}
+
+.header-blog .header-newsletter .header-blog-newsletter-form-invalid {
+    display: none;
+    font-size: 14px;
+    font-family: var(--base-heading, 'Francois One'), sans-serif;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.header-blog .header-newsletter .header-blog-newsletter-form-invalid span {
+    color: #FF8686;
+}
+
+.header-blog .header-newsletter .header-blog-newsletter-form-invalid.--show {
+    display: block;
+}
+
+.header-blog .header-newsletter .header-blog-newsletter-form-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #14C19A;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-family: var(--base-heading, 'Francois One'), sans-serif;
+    font-size: 20px;
 }
 
 .header-blog .header-newsletter form input[type="text"]::-webkit-input-placeholder {

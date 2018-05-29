@@ -87,11 +87,11 @@
     display: flex;
 }
 
-.blog-page .blog-page__newsletter form input[type="email"] {
+.blog-page .blog-page__newsletter form input[type="text"] {
     border: none;
     outline: none;
     padding: 10px;
-    margin-right: 11px;
+    margin-right: 11px;    
 }
 
 .blog-page .blog-page__newsletter form button {
