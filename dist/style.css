@@ -163,6 +163,198 @@ Author: Gilson Viana
 
     --box-shadow: .1rem .1rem 1rem rgba(100, 100, 100, .5);
 }
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;    
+  }
+  
+  /* s1 - s2 */
+  @media (min-width: 375px) and (max-width: 767px) {
+    .container {
+      width: 315px;
+    }
+  }
+
+  /* S 2 */
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 80px;
+      padding-right: 80px;
+      width: 608px;
+    }
+  }
+  
+  /* S 3 */
+  @media (min-width: 1440px) {
+    .container {
+      padding-left: 160px;
+      padding-right: 160px;
+      width: 1120px;
+    }
+  }
+  
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  @media (min-width: 768px) {
+    .row {
+      margin-left: -80px;
+      margin-right: -80px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .row {
+      margin-left: -160px;
+      margin-right: -160px;
+    }
+  }
+
+  .col-s1-one {
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  
+  .col-s1-two {
+    -ms-flex: 0 0 66.66666%;
+    flex: 0 0 66.66666%;
+    max-width: 66.66666%;
+  }
+  
+  .col-s1-three {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .col-s1-half {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  @media (min-width: 768px) {
+    .col-s2-one {
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+  
+    .col-s2-two {
+      -ms-flex: 0 0 66.66666%;
+      flex: 0 0 66.66666%;
+      max-width: 66.66666%;
+    }
+  
+    .col-s2-three {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .col-s2-half {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .col-s3-one {
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+  
+    .col-s3-two {
+      -ms-flex: 0 0 66.66666%;
+      flex: 0 0 66.66666%;
+      max-width: 66.66666%;
+    }
+  
+    .col-s3-three {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .col-s3-half {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+body.home {
+    background: url('img/pattern320.png') no-repeat; 
+    background-size: 100%;
+}
+
+body.blog,
+body.single {
+    background: url('img/header-bkg.png') no-repeat; 
+    background-size: 300% 320px;
+}
+
+/* Contact Page */
+body.page-id-9 {
+    background: var(--bkg-color, #E2E9EA);
+}
+
+body.home main header,
+body.blog main header,
+body.single,
+body.page-id-9 main header {
+    padding: 30px 0 0;       
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    body.home {
+        background: url('img/pattern375.png') no-repeat; 
+        background-size: 100% 503px;
+    }
+}
+
+@media (min-width: 768px) {
+    body.home {
+        background: url('img/header-bkg.png') no-repeat; 
+        background-size: 200% 588px;
+    }
+
+    body.home main header,
+    body.blog main header,
+    body.single,
+    body.page-id-9 main header {
+        padding: 80px 0 0;
+    }
+
+    body.blog,
+    body.single {
+        background: url('img/header-bkg.png') no-repeat; 
+        background-size: 200% 356px;
+    }
+}
+
+@media (min-width: 1440px) {
+    body.home {
+        background-size: 100% 588px;
+    }
+
+    body.blog,
+    body.single {
+        background: url('img/header-bkg.png') no-repeat; 
+        background-size: 100% 419px;
+    }
+}
 .blog-page {
     padding: 59px 0 0;
 }
@@ -681,7 +873,7 @@ Author: Gilson Viana
 }
 
 .front-page .lead:nth-child(1) {
-    margin: 93px 0 137px;    
+    margin: 93px 0 164px;    
 }
 
 .front-page .lead:nth-child(1) .box h1 {    
@@ -1148,188 +1340,4 @@ Author: Gilson Viana
 .post-page .the-post .share-box .share-box__buttons a img {
     width: 40px;
     height: 40px;
-}
-  .container {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 280px;    
-  }
-  
-  /* s1 - s2 */
-  @media (min-width: 375px) and (max-width: 767px) {
-    .container {
-      width: 315px;
-    }
-  }
-
-  /* S 2 */
-  @media (min-width: 768px) {
-    .container {
-      padding-left: 80px;
-      padding-right: 80px;
-      width: 608px;
-    }
-  }
-  
-  /* S 3 */
-  @media (min-width: 1440px) {
-    .container {
-      padding-left: 160px;
-      padding-right: 160px;
-      width: 1120px;
-    }
-  }
-  
-  .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-right: -30px;
-  }
-
-  @media (min-width: 768px) {
-    .row {
-      margin-left: -80px;
-      margin-right: -80px;
-    }
-  }
-  
-  @media (min-width: 1440px) {
-    .row {
-      margin-left: -160px;
-      margin-right: -160px;
-    }
-  }
-
-  .col-s1-one {
-    -ms-flex: 0 0 33.33333%;
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-  }
-  
-  .col-s1-two {
-    -ms-flex: 0 0 66.66666%;
-    flex: 0 0 66.66666%;
-    max-width: 66.66666%;
-  }
-  
-  .col-s1-three {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .col-s1-half {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  
-  @media (min-width: 768px) {
-    .col-s2-one {
-      -ms-flex: 0 0 33.33333%;
-      flex: 0 0 33.33333%;
-      max-width: 33.33333%;
-    }
-  
-    .col-s2-two {
-      -ms-flex: 0 0 66.66666%;
-      flex: 0 0 66.66666%;
-      max-width: 66.66666%;
-    }
-  
-    .col-s2-three {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-
-    .col-s2-half {
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  }
-  
-  @media (min-width: 1440px) {
-    .col-s3-one {
-      -ms-flex: 0 0 33.33333%;
-      flex: 0 0 33.33333%;
-      max-width: 33.33333%;
-    }
-  
-    .col-s3-two {
-      -ms-flex: 0 0 66.66666%;
-      flex: 0 0 66.66666%;
-      max-width: 66.66666%;
-    }
-  
-    .col-s3-three {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-
-    .col-s3-half {
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  }
-body.home {
-    background: url('img/header-bkg.png') no-repeat; 
-    background-size: 400% 503px;
-}
-
-body.blog,
-body.single {
-    background: url('img/header-bkg.png') no-repeat; 
-    background-size: 300% 320px;
-}
-
-/* Contact Page */
-body.page-id-9 {
-    background: var(--bkg-color, #E2E9EA);
-}
-
-body.home main header,
-body.blog main header,
-body.single,
-body.page-id-9 main header {
-    padding: 30px 0 0;       
-}
-
-@media (min-width: 768px) {
-    body.home {
-        background-size: 200% 588px;
-    }
-
-    body.home main header,
-    body.blog main header,
-    body.single,
-    body.page-id-9 main header {
-        padding: 80px 0 0;
-    }
-
-    body.blog,
-    body.single {
-        background: url('img/header-bkg.png') no-repeat; 
-        background-size: 200% 356px;
-    }
-}
-
-@media (min-width: 1440px) {
-    body.home {
-        background-size: 100% 588px;
-    }
-
-    body.blog,
-    body.single {
-        background: url('img/header-bkg.png') no-repeat; 
-        background-size: 100% 419px;
-    }
 }
