@@ -9,12 +9,12 @@ include('contact-form-process.php'); ?>
         <h2 class="text-center text-uppercase color-primary font-heading">contact us</h2>
         <div class="contact-page-message text-center">
             <?php if($_SERVER['REQUEST_METHOD'] === 'POST') :?>
-                <?php if( $name && $email &&  $message ) : ?>
+                <?php if( !$name_error && !$email_error &&  $message ) : ?>
                     <div class="contact-page-message--success">
                         <p>Thank you!</p>
                     </div>
                 <?php endif; ?>
-                <?php if( !$name || !$email || !$message ) : ?>
+                <?php if( $name_error || $email_error || !$message ) : ?>
                     <div class="contact-page-message--error">
                         <p><span>Invalid</span> data. Let's try again?</p>
                     </div>
@@ -23,15 +23,15 @@ include('contact-form-process.php'); ?>
         </div>
         <div class="f-group">
             <label for="contact-name">Name*</label>
-            <input type="text" name="contact-name" value="<?php echo $name; ?>" class="<?php echo ($name_error) ? 'field-error' : ''; ?>" />                            
+            <input type="text" name="contact-name" value="<?php echo $name; ?>" class="<?php echo ($name_error) ? 'field-error' : ''; ?>" maxlength="60" />                            
         </div>
         <div class="f-group">
             <label for="contact-email">Email*</label>
-            <input type="text" name="contact-email" value="<?php echo $email; ?>" class="<?php echo ($email_error) ? 'field-error' : ''; ?>" />
+            <input type="text" name="contact-email" value="<?php echo $email; ?>" class="<?php echo ($email_error) ? 'field-error' : ''; ?>" maxlength="120" />            
         </div>
         <div class="f-group">
             <label for="contact-message">Message*</label>
-            <textarea name="contact-message" cols="30" rows="10" type="text" class="<?php echo ($message_error) ? 'field-error' : ''; ?>"><?php echo $message; ?></textarea>        
+            <textarea name="contact-message" cols="30" rows="10" type="text" class="<?php echo ($message_error) ? 'field-error' : ''; ?>" maxlength="500"><?php echo $message; ?></textarea>        
         </div>        
         <div class="f-group">
             <span class="required-fields">* Required fields</span>

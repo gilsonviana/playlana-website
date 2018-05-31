@@ -1,0 +1,45 @@
+.pagination {
+    margin: 0 0 90px;
+    padding: 0;
+    font-family: var(--base-heading, 'Francois One'), sans-serif;
+    font-size: 16px;
+}
+
+.pagination a {
+    color: inherit;
+}
+
+.pagination li {
+    display: inline-block;    
+    background: #BEC7C9;
+    border-radius: 2px;
+    margin-right: 20px;
+    padding: 9px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.pagination li:first-child {
+    background: transparent;
+    color: var(--primary-color, #14C19A);
+}
+
+.pagination li:last-child {
+    color: #000;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+.pagination li:last-child a {
+    border-bottom: 5px solid var(--primary-color, #14C19A);
+}
+
+.pagination li.current:not(:first-child) {
+    color: #fff;
+    background: var(--primary-color, #14C19A);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}

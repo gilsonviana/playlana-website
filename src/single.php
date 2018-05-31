@@ -19,7 +19,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 <article class="the-post">
                     <h2 class="the-post__title"><?php the_title() ; ?></h2>
                     <h5 class="the-post__date"><?php echo get_the_date( 'F dS, Y' ); ?></h5>
-                    <p class="the-post__content"><?php the_content(); ?></p>                    
+                    <?php the_content(); ?> 
                     <div class="share-box">
                         <h4 class="share-box__title">share this</h4>
                         <div class="share-box__buttons">
@@ -30,8 +30,18 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                     </div>
                 </article>
             </div>
-            <div class="col-s3-one">
-                <!-- newsletter -->
+            <div class="d-none d-s3-block col-s3-one">
+                <div class="blog-page__newsletter d-s1-none d-s3-block">
+                    <h2 class="text-uppercase">join our newsletter</h2>
+                    <p>
+                        <span>Join over 80,000 people who read our</span>
+                        <span>newsletter each week</span>
+                    </p>
+                    <form id="blog-page-newsletter-form">
+                        <input type="text" name="subscriber-email" placeholder="Your email"/>
+                        <button class="text-uppercase font-heading color-white" type="submit">subscribe <img src="<?php echo get_template_directory_uri(). '/img/angle-right.png'; ?>" width="6" height="11" /></button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

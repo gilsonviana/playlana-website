@@ -53,3 +53,21 @@
     width: 40px;
     height: 40px;
 }
+@media (min-width: 768px) {
+    .post-page .the-post {
+        text-align: left !important;
+    }
+
+    .post-page .the-post .share-box .share-box__buttons {
+        margin: 0 !important;
+    }
+}
+@media (min-width: 1440px) {
+    .post-page .the-post .the-post__title {
+        font-size: 40px;
+    }
+
+    .post-page .the-post p {
+        font-size: 16px;
+    }
+}

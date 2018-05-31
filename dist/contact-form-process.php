@@ -28,7 +28,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     if(empty($_POST['contact-email'])) {
         $email_error = true;
     } else {
-        $email =  validate_input($_POST['contact-email']);
+        $email = $_POST['contact-email'];
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $email_error = true;
         }

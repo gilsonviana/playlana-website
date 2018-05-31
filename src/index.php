@@ -9,15 +9,16 @@
                 <!-- Post loop -->
                 <?php 
                 
-                // $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
-                // $query = new WP_Query( array(
-                //     'paged' => $paged
-                // ) );
+                $query = new WP_Query( array(
+                    'posts_per_page'    => 5,
+                    'paged' => $paged
+                ) );
 
-                if( have_posts() ) : 
-                    while( have_posts() ) : 
-                        the_post(); ?>
+                if( $query->have_posts() ) : 
+                    while( $query->have_posts() ) : 
+                        $query->the_post(); ?>
                     <article class="blog-post text-center">
                         <img class="blog-post__thumbnail" src="<?php echo esc_url( get_the_post_thumbnail_url() ); ?>" alt="Post thumbnail">
                         <a class="color-primary font-bold" href="<?php the_permalink(); ?>">
@@ -52,7 +53,9 @@
 
         <!-- Pagination -->
         <div class="row">
-
+            <ul class="pagination">
+                <?php get_pagination( $paged, $query->max_num_pages ); ?>
+            </ul>
         </div>
     </div>
 

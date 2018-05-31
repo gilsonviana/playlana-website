@@ -1,5 +1,6 @@
 .fixed-bar {
     position: fixed;
+    top: 0;
     padding: 40px 0 10px;
     background: var(--black-color);
     width: 100%;
@@ -30,6 +31,33 @@
     display: none;
 }
 
+.fixed-bar .fixed-navbar--collapsed {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #14C19A;
+    box-shadow: 1px 1px 16px #666;
+    width: 160px;
+    text-align: center;
+    z-index: 999;
+}
+
+.fixed-bar .fixed-navbar--collapsed ul {
+    list-style: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
+    padding: 55px 0;        
+}
+
+.fixed-bar .fixed-navbar--collapsed ul li {
+    margin: 0 0 25px;
+}
+
+.fixed-bar .fixed-navbar--collapsed ul li a {
+    border-bottom: 5px solid #1BF9C7;
+}
+
 @media (min-width: 375px) and (max-width: 767px) {
     .fixed-bar .apple-store-btn {
         border: 0;
@@ -37,6 +65,7 @@
         background: var(--primary-color, #13C19A);
         padding: 11px 18px;   
         text-shadow: 1px 1px rgba(100, 100, 100, .5);
+        margin: -15px;
     }
 
     .fixed-bar .apple-store-btn img {
