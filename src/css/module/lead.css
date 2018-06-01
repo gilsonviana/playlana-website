@@ -10,6 +10,11 @@
     margin: 93px 0 164px;    
 }
 
+.front-page .lead:nth-child(1) .special-mobile-placeholder {
+    position: absolute;
+    top: 183px;
+}
+
 .front-page .lead:nth-child(1) .box h1 {    
     margin: 0 0 9px;
 }
@@ -24,12 +29,6 @@
 
 .front-page .lead:nth-child(1) .box p span {
     display: block;
-}
-
-.front-page .lead:nth-child(1) .mobile-placeholder {    
-    position: absolute;
-    top: 40px;
-    left: 25px;
 }
 
 .front-page .lead:nth-child(2) {
@@ -301,6 +300,10 @@
     }
     .front-page .lead:nth-child(1) {
         margin: 142px 0 113px;
+    }
+
+    .front-page .lead:nth-child(1) .special-mobile-placeholder {        
+        top: 317px;
     }
 
     .front-page .lead:nth-child(1) .box {

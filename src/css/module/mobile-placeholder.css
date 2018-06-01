@@ -1,0 +1,13 @@
+.mobile-placeholder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    height: 200%;
+}
+
+.mobile-placeholder img {
+    position: relative;
+    top: 365px;
+    right: -50px;    
+}

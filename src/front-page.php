@@ -24,17 +24,23 @@
                     </div>
                 </div>                
                 <div class="col-s1-three col-s2-half">
-                    <!-- <img class="mobile-placeholder" src="<?php echo get_template_directory_uri() . '/img/mobile-placeholder.png'; ?>" alt="mobile placeholder" width="309" height="635"/> -->
+                    <div class="d-s1-none d-s2-block special-mobile-placeholder">
+                        <img src="<?php echo get_template_directory_uri() . '/img/mobile-placeholder.png'; ?>" alt="mobile placeholder" width="309" height="635"/>
+                    </div>
                 </div>
             </div>
         </div>        
-    </article>
+        <div class="mobile-placeholder d-s2-none">
+            <img src="<?php echo get_template_directory_uri() . '/img/mobile-placeholder.png'; ?>" alt="mobile placeholder" width="309" height="635"/>
+        </div>
+    </article>    
 
-    <article class="lead bg-default">
+
+    <article class="lead bg-default">        
         <div class="container">
             <div class="row">            
-                <div class="col-s1-three col-s2-half">
-                    <div class="box bg-white text-center">
+                <div class="col-s1-three col-s2-half" style="position: relative;">
+                    <div class="box bg-white text-center" style="position: static;">                        
                         <h2 class="color-secondary">POWER BUILD YOUR DATA</h2>
                         <p class="d-s2-none">
                             <span>Your brain is a multi-sensorial </span>
@@ -51,7 +57,7 @@
                             <span>Your brain is a multi-sensorial meaning-making machine. To store</span>                            
                             <span>knowledge, you got to build it the right way.</span>                            
                         </p>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>

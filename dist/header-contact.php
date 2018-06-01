@@ -30,7 +30,7 @@
                                 <div class="navbar--collapse d-s1-none">
                                     <a href="https://www.apple.com/ios/app-store/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/apple.png'; ?>" alt="apple logo" /> app store</a>
                                     <a href="<?php echo esc_url( get_page_link( 7 ) ); ?>">blog</a>
-                                    <a href="<?php echo esc_url( get_page_link( 9 ) ); ?>">contact</a>
+                                    <a class="current-menu-item" href="<?php echo esc_url( get_page_link( 9 ) ); ?>">contact</a>
                                 </div>
                                 <div class="navbar--collapsed">
                                     <ul class="text-uppercase">

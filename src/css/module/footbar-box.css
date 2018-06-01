@@ -29,6 +29,12 @@
     font-family: var(--base-heading, 'Francois One'), sans-serif;
 }
 
+.footbar-box .footer-menu a:hover,
+.footbar-box .current-menu-item {
+    color: #14C19A !important;
+    border: none !important;
+}
+
 .footbar-box .copyright {
     margin: 15px 0;
     text-align: center;

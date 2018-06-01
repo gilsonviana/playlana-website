@@ -1,5 +1,10 @@
-.header-contact .navbar-box .navbar a {
+.header-contact .navbar-box .navbar a, 
+.header-contact .navbar-box .navbar--collapse a {
     color: var(--black-color);
+}
+
+.header-contact .navbar-box .navbar--collapsed a {
+    color: #fff;
 }
 
 .header-contact .navbar #navbar-toggle span {
